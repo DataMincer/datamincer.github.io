@@ -1,0 +1,460 @@
+{
+    "packages": {
+        "datamincer/bundle-foobar": {
+            "dev-master": {
+                "name": "datamincer/bundle-foobar",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/project-bundle.git",
+                    "reference": "c4f6e32f40f393efd9810136e59890be1dba9393"
+                },
+                "require": {
+                    "datamincer/core": "dev-master",
+                    "datamincer/launcher": "dev-master",
+                    "datamincer/plugins": "dev-master",
+                    "php": ">=7.2"
+                },
+                "time": "2019-11-02T15:09:33+00:00",
+                "type": "datamincer-bundle",
+                "extra": {
+                    "installer-types": [
+                        "datamincer-bundle"
+                    ],
+                    "installer-paths": {
+                        "bundles/{$name}": [
+                            "type:datamincer-bundle"
+                        ]
+                    }
+                },
+                "scripts": {
+                    "dm": [
+                        "vendor/bin/dm"
+                    ],
+                    "dm-info": [
+                        "vendor/bin/dm bundle info"
+                    ],
+                    "dm-gen": [
+                        "vendor/bin/dm unit generate"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "",
+                        "role": ""
+                    }
+                ],
+                "description": "DataMincer: Bundle FooBar"
+            }
+        },
+        "datamincer/bundles-foobar": {
+            "dev-master": {
+                "name": "datamincer/bundles-foobar",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/project-bundle-set.git",
+                    "reference": "7ae77b3a5796760dcaf4f406585d20b36fdba2e8"
+                },
+                "require": {
+                    "datamincer/core": "dev-master",
+                    "datamincer/launcher": "dev-master",
+                    "datamincer/plugins": "dev-master",
+                    "oomphinc/composer-installers-extender": "dev-master",
+                    "php": ">=7.2"
+                },
+                "time": "2019-11-02T15:14:16+00:00",
+                "type": "project",
+                "extra": {
+                    "installer-types": [
+                        "datamincer-bundle"
+                    ],
+                    "installer-paths": {
+                        "bundles/{$name}": [
+                            "type:datamincer-bundle"
+                        ]
+                    },
+                    "data-mincer-options": {
+                        "bundlesPath": "bundles"
+                    }
+                },
+                "scripts": {
+                    "dm": [
+                        "vendor/bin/dm"
+                    ],
+                    "dm-info": [
+                        "vendor/bin/dm bundle info"
+                    ],
+                    "dm-gen": [
+                        "vendor/bin/dm unit generate"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "",
+                        "role": ""
+                    }
+                ],
+                "description": "DataMincer: Bundles FooBar"
+            }
+        },
+        "datamincer/core": {
+            "dev-master": {
+                "name": "datamincer/core",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/core.git",
+                    "reference": "fbfc6265b910e83b32cf2931f0b29b8a2c1c59d9"
+                },
+                "require": {
+                    "ext-mbstring": "*",
+                    "onkeltem/yaml-elc": "dev-master",
+                    "romaricdrigon/metayaml": "dev-master",
+                    "symfony/yaml": "2.*"
+                },
+                "time": "2019-10-30T00:43:40+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "DataMincerCore\\": "src/"
+                    },
+                    "files": [
+                        "src/DataMincer.php"
+                    ]
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "DataMincer: Core"
+            }
+        },
+        "datamincer/crowdanki": {
+            "dev-master": {
+                "name": "datamincer/crowdanki",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/crowdanki.git",
+                    "reference": "8e16186dbbb4fb66f9225d47aba47972791e825b"
+                },
+                "require-dev": {
+                    "datamincer/core": "dev-master",
+                    "datamincer/plugins": "dev-master"
+                },
+                "time": "2019-10-30T00:43:52+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "DataMincerCrowdAnki\\": "src/"
+                    },
+                    "files": [
+                        "src/Fields/CrowdAnkiNote.php",
+                        "src/Fields/CrowdAnkiNotes.php",
+                        "src/Fields/Guid.php",
+                        "src/Fields/Rtags.php",
+                        "src/Workers/CrowdAnkiDeck.php",
+                        "src/Workers/CrowdAnkiDecks.php"
+                    ]
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "DataMincer: CrowdAnki Plugins"
+            }
+        },
+        "datamincer/google": {
+            "dev-master": {
+                "name": "datamincer/google",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/google.git",
+                    "reference": "9bc36e39c7717fd7c7dee26a8040fbbd1cc174eb"
+                },
+                "require": {
+                    "datamincer/core": "dev-master",
+                    "google/apiclient": "^2.0"
+                },
+                "time": "2019-08-25T15:13:59+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "DataMincerGoogle\\": "src/"
+                    },
+                    "files": [
+                        "src/Workers/readers/GoogleSpreadsheet.php"
+                    ]
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "DataMincer: Google Plugins"
+            }
+        },
+        "datamincer/launcher": {
+            "dev-master": {
+                "name": "datamincer/launcher",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/launcher.git",
+                    "reference": "22d3322549b098c01c305ab4649419ff08236c29"
+                },
+                "require": {
+                    "datamincer/core": "dev-master",
+                    "docopt/docopt": "*",
+                    "onkeltem/task-runner": "dev-master",
+                    "symfony/yaml": "*"
+                },
+                "time": "2019-10-30T00:22:38+00:00",
+                "bin": [
+                    "bin/dm"
+                ],
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "DataMincerLauncher\\": "src/"
+                    },
+                    "files": [
+                        "src/Task/BundleTask.php",
+                        "src/Task/UnitTask.php"
+                    ]
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "DataMincer: Launcher"
+            }
+        },
+        "datamincer/plugins": {
+            "dev-master": {
+                "name": "datamincer/plugins",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/plugins.git",
+                    "reference": "4c13240aaa17af138bc9c0cf79c8cae3ee8f3b4a"
+                },
+                "require": {
+                    "doctrine/dbal": "^2.9",
+                    "ext-fileinfo": "*",
+                    "js-phpize/js-phpize-phug": "dev-master",
+                    "leafo/scssphp": "^0.8",
+                    "league/csv": "^9.2",
+                    "phug/phug": "dev-master",
+                    "ralouphie/mimey": "^2.1",
+                    "ramsey/uuid": "^4.0",
+                    "twig/twig": "^2.0"
+                },
+                "time": "2019-10-30T00:24:21+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "DataMincerPlugins\\": "src/"
+                    },
+                    "files": [
+                        "src/Fields/Append.php",
+                        "src/Fields/Balance.php",
+                        "src/Fields/Callback.php",
+                        "src/Fields/Chain.php",
+                        "src/Fields/Concat.php",
+                        "src/Fields/CopyFile.php",
+                        "src/Fields/Csv.php",
+                        "src/Fields/Debug.php",
+                        "src/Fields/Each.php",
+                        "src/Fields/Exec.php",
+                        "src/Fields/FetchMedia.php",
+                        "src/Fields/File.php",
+                        "src/Fields/GitHubUrl.php",
+                        "src/Fields/Group.php",
+                        "src/Fields/GroupBy.php",
+                        "src/Fields/Hash.php",
+                        "src/Fields/ImageMagick.php",
+                        "src/Fields/MakeDir.php",
+                        "src/Fields/Merge.php",
+                        "src/Fields/Mime2Ext.php",
+                        "src/Fields/OpenDir.php",
+                        "src/Fields/Phug.php",
+                        "src/Fields/PregMatch.php",
+                        "src/Fields/Rand.php",
+                        "src/Fields/SaveFile.php",
+                        "src/Fields/Scss.php",
+                        "src/Fields/SelectKeys.php",
+                        "src/Fields/Split.php",
+                        "src/Fields/Subscript.php",
+                        "src/Fields/Twig.php",
+                        "src/Fields/Uuid.php",
+                        "src/Fields/Value.php",
+                        "src/Generators/DefaultGenerator.php",
+                        "src/Mixins/ImportFiles.php",
+                        "src/Services/Database.php",
+                        "src/Services/MediaFetcher.php",
+                        "src/Units/DefaultUnit.php",
+                        "src/Workers/readers/Sequence.php",
+                        "src/Workers/readers/Csv.php",
+                        "src/Workers/processors/Debug.php",
+                        "src/Workers/processors/ExitWorker.php",
+                        "src/Workers/processors/Group.php",
+                        "src/Workers/processors/Iterator.php",
+                        "src/Workers/processors/Join.php",
+                        "src/Workers/processors/Process.php",
+                        "src/Workers/writers/Table.php"
+                    ]
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "DataMincer: Plugins"
+            }
+        },
+        "datamincer/tts": {
+            "dev-master": {
+                "name": "datamincer/tts",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/tts.git",
+                    "reference": "7e460423d3cdebdbda8e75de083ca069057934f7"
+                },
+                "require": {
+                    "aws/aws-sdk-php": "^3.0@dev"
+                },
+                "require-dev": {
+                    "datamincer/core": "dev-master"
+                },
+                "time": "2019-10-30T00:24:46+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "DataMincerTts\\": "src/"
+                    },
+                    "files": [
+                        "src/Services/Amazon.php",
+                        "src/Fields/Tts.php"
+                    ]
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "DataMincer: TTS Plugins"
+            }
+        },
+        "onkeltem/task-runner": {
+            "dev-master": {
+                "name": "onkeltem/task-runner",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:OnkelTem/task-runner.git",
+                    "reference": "51a154b2f23f88bc1761c849d5fcc99cfbfe3ef2"
+                },
+                "require": {
+                    "docopt/docopt": "*"
+                },
+                "time": "2019-09-06T12:23:26+00:00",
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "TaskRunner\\": "src/"
+                    }
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Extensible PHP Task Runner"
+            }
+        },
+        "onkeltem/yaml-elc": {
+            "dev-master": {
+                "name": "onkeltem/yaml-elc",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:OnkelTem/yaml-elc.git",
+                    "reference": "f58a715ebfffd680b57fd184d431f462b0952003"
+                },
+                "require": {
+                    "symfony/yaml": "*"
+                },
+                "time": "2019-09-21T14:16:36+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "YamlElc\\": "src/"
+                    }
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Datamincer: Yaml Enhanced List Comprehension"
+            }
+        }
+    }
+}

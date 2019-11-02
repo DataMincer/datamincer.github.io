@@ -1,0 +1,48 @@
+{
+  "name": "datamincer/packages",
+  "description": "Data Mincer Packages Repository",
+  "homepage": "https://datamincer.github.io",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:OnkelTem/task-runner.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:OnkelTem/yaml-elc.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DataMincer/core.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DataMincer/crowdanki.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DataMincer/plugins.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DataMincer/tts.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DataMincer/google.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DataMincer/launcher.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DataMincer/project-bundle.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DataMincer/project-bundle-set.git"
+    }
+  ],
+  "require-all": true
+}
