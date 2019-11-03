@@ -8,7 +8,7 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/project-bundle.git",
-                    "reference": "c4f6e32f40f393efd9810136e59890be1dba9393"
+                    "reference": "92d22d2aa50816f86db305bd2c1fcfd7b73d9dcf"
                 },
                 "require": {
                     "datamincer/core": "dev-master",
@@ -16,7 +16,7 @@
                     "datamincer/plugins": "dev-master",
                     "php": ">=7.2"
                 },
-                "time": "2019-11-02T15:09:33+00:00",
+                "time": "2019-11-03T16:28:32+00:00",
                 "type": "datamincer-bundle",
                 "extra": {
                     "installer-types": [
@@ -56,7 +56,7 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/project-bundle-set.git",
-                    "reference": "7ae77b3a5796760dcaf4f406585d20b36fdba2e8"
+                    "reference": "f102af5f66efd442c6570f4a5daed9a4b66bac5a"
                 },
                 "require": {
                     "datamincer/core": "dev-master",
@@ -65,7 +65,7 @@
                     "oomphinc/composer-installers-extender": "dev-master",
                     "php": ">=7.2"
                 },
-                "time": "2019-11-02T15:14:16+00:00",
+                "time": "2019-11-03T16:29:01+00:00",
                 "type": "project",
                 "extra": {
                     "installer-types": [
