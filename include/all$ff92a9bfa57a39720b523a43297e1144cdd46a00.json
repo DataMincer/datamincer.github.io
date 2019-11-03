@@ -1,105 +1,5 @@
 {
     "packages": {
-        "datamincer/bundle-foobar": {
-            "dev-master": {
-                "name": "datamincer/bundle-foobar",
-                "version": "dev-master",
-                "version_normalized": "9999999-dev",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:DataMincer/project-bundle.git",
-                    "reference": "92d22d2aa50816f86db305bd2c1fcfd7b73d9dcf"
-                },
-                "require": {
-                    "datamincer/core": "dev-master",
-                    "datamincer/launcher": "dev-master",
-                    "datamincer/plugins": "dev-master",
-                    "php": ">=7.2"
-                },
-                "time": "2019-11-03T16:28:32+00:00",
-                "type": "datamincer-bundle",
-                "extra": {
-                    "installer-types": [
-                        "datamincer-bundle"
-                    ],
-                    "installer-paths": {
-                        "bundles/{$name}": [
-                            "type:datamincer-bundle"
-                        ]
-                    }
-                },
-                "scripts": {
-                    "dm": [
-                        "vendor/bin/dm"
-                    ],
-                    "dm-info": [
-                        "vendor/bin/dm bundle info"
-                    ],
-                    "dm-gen": [
-                        "vendor/bin/dm unit generate"
-                    ]
-                },
-                "authors": [
-                    {
-                        "name": "",
-                        "role": ""
-                    }
-                ],
-                "description": "DataMincer: Bundle FooBar"
-            }
-        },
-        "datamincer/bundles-foobar": {
-            "dev-master": {
-                "name": "datamincer/bundles-foobar",
-                "version": "dev-master",
-                "version_normalized": "9999999-dev",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:DataMincer/project-bundle-set.git",
-                    "reference": "f102af5f66efd442c6570f4a5daed9a4b66bac5a"
-                },
-                "require": {
-                    "datamincer/core": "dev-master",
-                    "datamincer/launcher": "dev-master",
-                    "datamincer/plugins": "dev-master",
-                    "oomphinc/composer-installers-extender": "dev-master",
-                    "php": ">=7.2"
-                },
-                "time": "2019-11-03T16:29:01+00:00",
-                "type": "project",
-                "extra": {
-                    "installer-types": [
-                        "datamincer-bundle"
-                    ],
-                    "installer-paths": {
-                        "bundles/{$name}": [
-                            "type:datamincer-bundle"
-                        ]
-                    },
-                    "data-mincer-options": {
-                        "bundlesPath": "bundles"
-                    }
-                },
-                "scripts": {
-                    "dm": [
-                        "vendor/bin/dm"
-                    ],
-                    "dm-info": [
-                        "vendor/bin/dm bundle info"
-                    ],
-                    "dm-gen": [
-                        "vendor/bin/dm unit generate"
-                    ]
-                },
-                "authors": [
-                    {
-                        "name": "",
-                        "role": ""
-                    }
-                ],
-                "description": "DataMincer: Bundles FooBar"
-            }
-        },
         "datamincer/core": {
             "dev-master": {
                 "name": "datamincer/core",
@@ -348,6 +248,106 @@
                     }
                 ],
                 "description": "DataMincer: Plugins"
+            }
+        },
+        "datamincer/project-bundle": {
+            "dev-master": {
+                "name": "datamincer/project-bundle",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/project-bundle.git",
+                    "reference": "c974404c8b2acc768a30b5fa23b212b461aefea0"
+                },
+                "require": {
+                    "datamincer/core": "dev-master",
+                    "datamincer/launcher": "dev-master",
+                    "datamincer/plugins": "dev-master",
+                    "php": ">=7.2"
+                },
+                "time": "2019-11-03T16:36:59+00:00",
+                "type": "datamincer-bundle",
+                "extra": {
+                    "installer-types": [
+                        "datamincer-bundle"
+                    ],
+                    "installer-paths": {
+                        "bundles/{$name}": [
+                            "type:datamincer-bundle"
+                        ]
+                    }
+                },
+                "scripts": {
+                    "dm": [
+                        "vendor/bin/dm"
+                    ],
+                    "dm-info": [
+                        "vendor/bin/dm bundle info"
+                    ],
+                    "dm-gen": [
+                        "vendor/bin/dm unit generate"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "",
+                        "role": ""
+                    }
+                ],
+                "description": "DataMincer: Bundle Template"
+            }
+        },
+        "datamincer/project-bundle-set": {
+            "dev-master": {
+                "name": "datamincer/project-bundle-set",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:DataMincer/project-bundle-set.git",
+                    "reference": "bf7b9c71dfe9d8c43d265ef42ff69eb19f9d0763"
+                },
+                "require": {
+                    "datamincer/core": "dev-master",
+                    "datamincer/launcher": "dev-master",
+                    "datamincer/plugins": "dev-master",
+                    "oomphinc/composer-installers-extender": "dev-master",
+                    "php": ">=7.2"
+                },
+                "time": "2019-11-03T16:36:35+00:00",
+                "type": "project",
+                "extra": {
+                    "installer-types": [
+                        "datamincer-bundle"
+                    ],
+                    "installer-paths": {
+                        "bundles/{$name}": [
+                            "type:datamincer-bundle"
+                        ]
+                    },
+                    "data-mincer-options": {
+                        "bundlesPath": "bundles"
+                    }
+                },
+                "scripts": {
+                    "dm": [
+                        "vendor/bin/dm"
+                    ],
+                    "dm-info": [
+                        "vendor/bin/dm bundle info"
+                    ],
+                    "dm-gen": [
+                        "vendor/bin/dm unit generate"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "",
+                        "role": ""
+                    }
+                ],
+                "description": "DataMincer: Bundle Set Template"
             }
         },
         "datamincer/tts": {
