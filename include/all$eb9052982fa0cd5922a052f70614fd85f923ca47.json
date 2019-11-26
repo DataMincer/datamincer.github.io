@@ -8,7 +8,7 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/core.git",
-                    "reference": "fbfc6265b910e83b32cf2931f0b29b8a2c1c59d9"
+                    "reference": "4ed4564b9035a060c161862ad48c498a61bde3ac"
                 },
                 "require": {
                     "ext-mbstring": "*",
@@ -16,7 +16,7 @@
                     "romaricdrigon/metayaml": "dev-master",
                     "symfony/yaml": "2.*"
                 },
-                "time": "2019-10-30T00:43:40+00:00",
+                "time": "2019-11-26T16:31:10+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -47,13 +47,13 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/crowdanki.git",
-                    "reference": "8e16186dbbb4fb66f9225d47aba47972791e825b"
+                    "reference": "bf0bcf546d2e19a8666f4458591fc5a4160111ef"
                 },
                 "require-dev": {
                     "datamincer/core": "dev-master",
                     "datamincer/plugins": "dev-master"
                 },
-                "time": "2019-10-30T00:43:52+00:00",
+                "time": "2019-11-26T16:32:37+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -89,13 +89,13 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/google.git",
-                    "reference": "9bc36e39c7717fd7c7dee26a8040fbbd1cc174eb"
+                    "reference": "6ec4cab3b964cb25b0a0a0902fd93aff2ab43e83"
                 },
                 "require": {
                     "datamincer/core": "dev-master",
                     "google/apiclient": "^2.0"
                 },
-                "time": "2019-08-25T15:13:59+00:00",
+                "time": "2019-11-26T16:32:54+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -126,7 +126,7 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/launcher.git",
-                    "reference": "22d3322549b098c01c305ab4649419ff08236c29"
+                    "reference": "fa457302687e7aca5a5a8461225ae88ad5221e70"
                 },
                 "require": {
                     "datamincer/core": "dev-master",
@@ -134,7 +134,7 @@
                     "onkeltem/task-runner": "dev-master",
                     "symfony/yaml": "*"
                 },
-                "time": "2019-10-30T00:22:38+00:00",
+                "time": "2019-11-26T16:33:11+00:00",
                 "bin": [
                     "bin/dm"
                 ],
@@ -144,8 +144,8 @@
                         "DataMincerLauncher\\": "src/"
                     },
                     "files": [
-                        "src/Task/BundleTask.php",
-                        "src/Task/UnitTask.php"
+                        "src/Tasks/BundleTask.php",
+                        "src/Tasks/UnitTask.php"
                     ]
                 },
                 "license": [
@@ -169,7 +169,7 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/plugins.git",
-                    "reference": "4c13240aaa17af138bc9c0cf79c8cae3ee8f3b4a"
+                    "reference": "5095a4efcaacd3071cbc1c9d2773710a1f7c7137"
                 },
                 "require": {
                     "doctrine/dbal": "^2.9",
@@ -182,7 +182,7 @@
                     "ramsey/uuid": "^4.0",
                     "twig/twig": "^2.0"
                 },
-                "time": "2019-10-30T00:24:21+00:00",
+                "time": "2019-11-26T16:33:50+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -201,7 +201,7 @@
                         "src/Fields/Exec.php",
                         "src/Fields/FetchMedia.php",
                         "src/Fields/File.php",
-                        "src/Fields/GitHubUrl.php",
+                        "src/Fields/GitUrl.php",
                         "src/Fields/Group.php",
                         "src/Fields/GroupBy.php",
                         "src/Fields/Hash.php",
@@ -358,7 +358,7 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/tts.git",
-                    "reference": "7e460423d3cdebdbda8e75de083ca069057934f7"
+                    "reference": "32f1f87ef50639ea8aa189b428fd8edb541a1af0"
                 },
                 "require": {
                     "aws/aws-sdk-php": "^3.0@dev"
@@ -366,7 +366,7 @@
                 "require-dev": {
                     "datamincer/core": "dev-master"
                 },
-                "time": "2019-10-30T00:24:46+00:00",
+                "time": "2019-11-26T16:40:30+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -391,6 +391,72 @@
             }
         },
         "onkeltem/task-runner": {
+            "0.0.1": {
+                "name": "onkeltem/task-runner",
+                "version": "0.0.1",
+                "version_normalized": "0.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:OnkelTem/task-runner.git",
+                    "reference": "91fa8efbc78629ce043fd0a637bfe9c44b10544a"
+                },
+                "require": {
+                    "docopt/docopt": "^1.0.2",
+                    "monolog/monolog": "^2.0.1",
+                    "php": "^7.2"
+                },
+                "time": "2019-11-15T00:04:35+00:00",
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "TaskRunner\\": "src/"
+                    }
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Extensible PHP Task Runner"
+            },
+            "0.0.2": {
+                "name": "onkeltem/task-runner",
+                "version": "0.0.2",
+                "version_normalized": "0.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:OnkelTem/task-runner.git",
+                    "reference": "80bbb5f68fd25e6224b4c756ecba967f80c8388f"
+                },
+                "require": {
+                    "docopt/docopt": "dev-master",
+                    "monolog/monolog": "^2.0.1",
+                    "php": "^7.2"
+                },
+                "time": "2019-11-15T01:05:43+00:00",
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "TaskRunner\\": "src/"
+                    }
+                },
+                "license": [
+                    "LGPL-3.0-or-later"
+                ],
+                "authors": [
+                    {
+                        "name": "Artiom Neganov",
+                        "email": "aneganov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Extensible PHP Task Runner"
+            },
             "dev-master": {
                 "name": "onkeltem/task-runner",
                 "version": "dev-master",
@@ -398,12 +464,15 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:OnkelTem/task-runner.git",
-                    "reference": "51a154b2f23f88bc1761c849d5fcc99cfbfe3ef2"
+                    "reference": "5fafe259d82cb8d7cb84875f3b0cfbac68621974"
                 },
                 "require": {
-                    "docopt/docopt": "*"
+                    "bramus/monolog-colored-line-formatter": "^3.0",
+                    "docopt/docopt": "dev-master",
+                    "monolog/monolog": "^2.0.1",
+                    "php": "^7.2"
                 },
-                "time": "2019-09-06T12:23:26+00:00",
+                "time": "2019-11-26T16:40:05+00:00",
                 "type": "project",
                 "autoload": {
                     "psr-4": {
