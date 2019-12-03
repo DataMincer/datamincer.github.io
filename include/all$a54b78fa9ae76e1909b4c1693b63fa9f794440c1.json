@@ -127,14 +127,14 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:DataMincer/launcher.git",
-                    "reference": "d206ea62b861bd12120e45c2c5331c153d514774"
+                    "reference": "a3c972779cb1021590da41d6ecd0e2f4f19e4dcc"
                 },
                 "require": {
                     "datamincer/core": "*",
-                    "onkeltem/task-runner": "^0.0.4",
+                    "datamincer/task-runner": "^0.0.4",
                     "symfony/yaml": "^2.8.52"
                 },
-                "time": "2019-12-03T01:13:56+00:00",
+                "time": "2019-12-03T01:27:47+00:00",
                 "bin": [
                     "bin/dm"
                 ],
