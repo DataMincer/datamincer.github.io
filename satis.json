@@ -5,11 +5,11 @@
   "repositories": [
     {
       "type": "git",
-      "url": "git@github.com:OnkelTem/task-runner.git"
+      "url": "git@github.com:DataMincer/task-runner.git"
     },
     {
       "type": "git",
-      "url": "git@github.com:OnkelTem/yaml-elc.git"
+      "url": "git@github.com:DataMincer/yaml-elc.git"
     },
     {
       "type": "git",
