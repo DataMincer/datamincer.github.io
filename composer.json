@@ -1,0 +1,19 @@
+{
+  "name": "datamincer/composer-repository",
+  "description": "DataMincer: Composer repository",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Artiom Neganov",
+      "email": "aneganov@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "scripts": {
+    "build": "./vendor/bin/satis build satis.json ."
+  },
+  "type": "project",
+  "require":  {
+    "composer/satis": "^1.0"
+  }
+}
